@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive card layout</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .container{
+            margin: 20px;
+        }
+        .row{
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .card01{
+            background: #03D29F;
+            position: relative;
+            flex: 1;
+            max-width: 300px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        .card02{
+            background: #50a7ff;
+            position: relative;
+            flex: 1;
+            max-width: 460px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .card03{
+            background: #ff7675;
+            position: relative;
+            flex: 1;
+            max-width: 940px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        @media(max-width:800px){
+            .card01{
+                flex: 100%;
+                max-width: 600px;
+            }
+            .card02{
+                flex: 100%;
+                max-width: 600px;
+            }
+
+            .card03{
+                flex: 100%;
+                max-width: 600px;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- row 1 -->
+            <div class="row">
+            <div class="card01"></div>
+        <div class="card01"></div>
+            <div class="card01"></div>
+        </div>
+        <!-- row 2 -->
+        <div class="row">
+            <div class="card02"></div>
+        <div class="card02"></div>
+        </div>
+        <!-- row 3 -->
+
+        <div class="row">
+            <div class="card03"></div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
